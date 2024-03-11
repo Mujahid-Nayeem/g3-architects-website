@@ -14,10 +14,10 @@
     color: rgb(255, 255, 255);
     font-size: 1.25rem;
     font-weight: 600;
-    margin: 32px 50px;
+    /* margin: 32px 50px; */
     cursor: pointer;
     border: none;
-    
+
 }
 
 /* Header Styles */
@@ -75,22 +75,66 @@ nav li a {
 }
 
 .banner img {
+    margin-top: 20px;
     width: 100%;
 }
+
+/* Features Section */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+
+}
+
+.Features-content {
+    display: flex;
+    align-items: center;
+}
+
+.Features-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.Features-description {
+    padding-left: 70px;
+}
+
+.Features-descrip-heading {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#quick {
+    color: #727272;
+}
+
+#Features{
+    color: #ff900e;
+}
+
+.Features-description-main{
+    font-size: 16px;
+    color: rgb(114, 114, 114);
+}
+
 
 /* responsive styles */
 /* small devices */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
+
     nav {
         flex-direction: column;
     }
 }
+
 /* Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    header{
+    header {
         padding: 20px;
     }
 }
